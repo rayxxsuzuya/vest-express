@@ -239,7 +239,10 @@ body {
   display: block;
   background-color: #ffba00;
   width: 100%;
-  padding: 6px 31px;
+  padding: 3.5px 31px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .delivery {
@@ -276,7 +279,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .delivery__title--small {
@@ -323,7 +326,7 @@ body {
 }
 
 .delivery__point + .delivery__point {
-  margin-top: 20px;
+  margin-top: 27px;
 }
 
 .delivery__yellow {
@@ -348,6 +351,7 @@ body {
 
 .delivery__people {
   display: block;
+  margin-right: 50px;
 }
 
 .delivery__calculator {
@@ -607,7 +611,7 @@ body {
   font-size: 30px;
   line-height: 24px;
   font-weight: 400;
-  margin-bottom: 68px;
+  margin-bottom: 74px;
 }
 
 .advantages__inner {
@@ -631,6 +635,10 @@ body {
 
 .advantages__item + .advantages__item {
   margin-top: 50px;
+}
+
+.advantages__item:last-child {
+  margin-top: 71px;
 }
 
 .advantages__icon {
@@ -782,4 +790,186 @@ body {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+.footer {
+  background: #000 url(../../img/footer_bg.jpg) no-repeat center;
+  background-size: cover;
+  padding: 34px 0 31px;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__title {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+
+.footer__pages {
+  margin-right: 107px;
+}
+
+.footer__item {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  display: block;
+}
+
+.footer__item.active {
+  text-decoration: underline;
+}
+
+.footer__item + .footer__item {
+  margin-top: 17px;
+}
+
+.footer__main {
+  max-width: 555px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 33px;
+}
+
+.footer__image {
+  margin-right: 17px;
+}
+
+.footer__span {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer__wrapper {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 40px 90px 0px rgba(75, 7, 26, 0.75);
+  box-shadow: 0px 40px 90px 0px rgba(75, 7, 26, 0.75);
+  text-align: center;
+  padding: 23px 50px 0;
+  margin-bottom: 41px;
+  width: 100%;
+}
+
+.footer__delivery {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.footer__track {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #000000;
+  margin-bottom: 27px;
+}
+
+.footer__number {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.footer__whatsapp {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-right: 44px;
+}
+
+.footer__telegram {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.footer__recall {
+  font-size: 14px;
+  line-height: 218%;
+  font-weight: 500;
+  padding: 7px 37px;
+  background-color: #ffba00;
+  max-width: 181px;
+  margin: 0 auto;
+}
+
+.footer__social {
+  padding: 16px 12px;
+  background-color: #fff;
+  max-width: 181px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__paragraph {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.footer__link {
+  width: 38px;
+  height: 38px;
+  margin-right: 23px;
+}
+
+.footer__link:last-child {
+  margin-right: 0;
+}
+
+.footer__link.facebook {
+  background: url(../img/facebook.png) no-repeat;
+}
+
+.footer__link.instagram {
+  background: url(../img/instagram.png) no-repeat;
+}
+
+.footer__link.vkontakte {
+  background: url(../img/instagram.png) no-repeat;
+  background-position-x: -58px;
 }
