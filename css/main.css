@@ -1,3 +1,108 @@
+/* Slider */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 *,
 *:before,
 *:after {
@@ -156,6 +261,9 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .delivery__info {
@@ -244,7 +352,6 @@ body {
 
 .delivery__calculator {
   max-width: 450px;
-  max-height: 565px;
   background-color: #fff;
   -webkit-box-shadow: 0px 15px 20px 0px rgba(38, 64, 94, 0.75);
   box-shadow: 0px 15px 20px 0px rgba(38, 64, 94, 0.75);
@@ -558,4 +665,121 @@ body {
 
 .advantages__high {
   margin-bottom: 16px;
+}
+
+.reviews {
+  padding: 43px 0 51px;
+}
+
+.reviews__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.reviews__title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+.reviews__documents {
+  width: 50%;
+}
+
+.reviews__people {
+  width: 50%;
+}
+
+.reviews__icon {
+  vertical-align: sub;
+}
+
+.reviews__link {
+  line-height: 36px;
+  font-weight: 500;
+  margin-left: 20px;
+  border-bottom: 1px dashed #1d5493;
+}
+
+.reviews__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.reviews__avatar {
+  margin-left: -100px;
+  margin-top: 28px;
+  position: relative;
+  left: -23px;
+}
+
+.reviews__dots {
+  margin-left: 60px;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  max-width: 404px;
+  margin: 0 auto;
+  position: relative;
+  left: 28px;
+}
+
+.reviews__slider {
+  position: relative;
+}
+
+.reviews .slick-prev {
+  position: absolute;
+  left: 17px;
+  top: 25%;
+  font-size: 0;
+  background: url(../img/reviews_arrow.png) no-repeat;
+  width: 19px;
+  height: 18px;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  z-index: 20;
+}
+
+.reviews .slick-prev:hover {
+  background-image: url(../img/reviews_arrow_hover.png);
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.reviews .slick-next {
+  position: absolute;
+  right: -14px;
+  top: 25%;
+  font-size: 0;
+  background: url(../img/reviews_arrow.png) no-repeat;
+  width: 19px;
+  height: 18px;
+  z-index: 20;
+}
+
+.reviews .slick-next:hover {
+  background-image: url(../img/reviews_arrow_hover.png);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
