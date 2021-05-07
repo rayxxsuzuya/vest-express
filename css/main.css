@@ -1176,3 +1176,114 @@ body {
   font-weight: 500;
   border-bottom: 1px dashed #1d5493;
 }
+
+.contacts {
+  padding: 52px 0 33px;
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(120, 143, 166, 0.75);
+  box-shadow: 0px 2px 20px 0px rgba(120, 143, 166, 0.75);
+}
+
+.contacts__title {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contacts__subtitle {
+  font-weight: 500;
+  max-width: 578px;
+  margin-bottom: 34px;
+}
+
+.contacts__address {
+  font-weight: 500;
+  margin-bottom: 44px;
+}
+
+.contacts__link {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 28px;
+  position: relative;
+}
+
+.contacts__link:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: url(../img/contacts__phone.png) no-repeat;
+  left: 0;
+  top: 2px;
+}
+
+.contacts__link--first {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.contacts__whatsapp {
+  margin-left: 7px;
+}
+
+.contacts__bond {
+  margin-top: 71px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 55px;
+}
+
+.contacts__form {
+  max-width: 362px;
+  width: 100%;
+}
+
+.contacts__name,
+.contacts__tel,
+.contacts__mail,
+.contacts__city,
+.contacts__question {
+  width: 100%;
+  margin-bottom: 21px;
+  border: 1px solid #303539;
+  border-radius: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 9px 18px;
+}
+
+.contacts__paragraph {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+  padding-right: 30px;
+  margin-bottom: 21px;
+}
+
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.contacts__btn {
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6.5px 44px;
+  background-color: #ffba00;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(87, 98, 110, 0.75);
+  box-shadow: 0px 10px 20px 0px rgba(87, 98, 110, 0.75);
+  border-radius: 17px;
+}
