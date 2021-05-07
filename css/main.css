@@ -793,7 +793,7 @@ body {
 }
 
 .footer {
-  background: #000 url(../../img/footer_bg.jpg) no-repeat center;
+  background: #000 url(../img/footer_bg.jpg) no-repeat center;
   background-size: cover;
   padding: 34px 0 31px;
 }
